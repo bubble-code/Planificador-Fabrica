@@ -1,0 +1,6 @@
+@Planificador_Fabrica_HostAddress = http://localhost:5228
+
+GET {{Planificador_Fabrica_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
