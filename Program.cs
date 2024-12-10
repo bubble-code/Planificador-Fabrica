@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDbContext>(opt=>opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<DatabaseService>();
 builder.Services.AddScoped<IOrdenFabricacionRepository, OrdenFabricacionRepository>();
+builder.Services.AddScoped<VRptOrdenFabricacionRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
